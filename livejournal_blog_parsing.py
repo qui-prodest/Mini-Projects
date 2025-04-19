@@ -10,7 +10,7 @@ with open('blog_content.txt', 'w', encoding='utf-8') as output:
 
 
     def get_posts_text(url: str) -> str:
-        # Функция для получения текста из тегов <b> на одной странице
+        # Функция для получения текста из тегов <div> с нужным атрибутом на одной странице
 
         posts_text = ''
         r = requests.get(url)
